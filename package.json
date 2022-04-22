@@ -1,0 +1,26 @@
+{
+  "name": "crud-nodejs-express-vercel",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Deploying NodeJS Express Serverless to Vercel",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sarria/CRUD-NodeJs-Express-Vercel.git"
+  },
+  "author": "Juan Sarria",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sarria/CRUD-NodeJs-Express-Vercel/issues"
+  },
+  "homepage": "https://github.com/sarria/CRUD-NodeJs-Express-Vercel#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }  
+}
