@@ -1,6 +1,6 @@
 import {
-	getUsers /*,
-	addUser,
+	getUsers,
+	addUser /*,
 	getUserById,
 	updateUser,
 	deleteUser
@@ -11,10 +11,10 @@ const routes = (app) => {
 
 	app.route('/users')
 		.get(getUsers);
-	/*
+
 	app.route('/user')
 		.post(addUser);
-
+	/*
 	app.route('/user/:id')
 		.get(getUserById)
 		.put(updateUser)
