@@ -1,10 +1,5 @@
-# CRUD-Node-Express-Firebase
-https://github.com/sarria/CRUD-Node-Express-Firebase.git
-## Code interview for RentRedi
-Including .env for easy testing
-
-## Task
-Task name: User endpoints\
+/*
+Task name: User endpoints
 Duration: 1 evening
 
 Requirements
@@ -18,13 +13,31 @@ Requirements
   6.  (optional bonus) add something creative you'd like or connect to a ReactJS front-end
 
   API Key: 7afa46f2e91768e7eeeb9001ce40de19
+*/
 
-## Steps
-```bash
-npm i
-npm start
-```
-## Usage
-GET http://localhost:8080/users \
-POST http://localhost:8080/user \
-GET, PUT, DELETE http://localhost:8080/user/:id 
+const express = require("express");
+const fetch = require("node-fetch");
+const API_Key = "7afa46f2e91768e7eeeb9001ce40de19";
+
+const app = express();
+
+app.get("/", (req, res) => {
+  console.log('triggering  "/" endpoint...');
+
+  const geo = fetch(
+    `https://api.openweathermap.org/data/2.5/weather?zip=12345&appid=${API_Key}`
+  );
+  // define company name
+  let companyName = "RentRedi";
+  console.log("companyName = ", companyName);
+
+  // send response
+  res.send(`Welcome to the ${companyName} interview!`);
+});
+
+app.listen(8080);
+
+/*
+https://github.com/sarria/CRUD-Node-Express-Firebase.git
+
+*/

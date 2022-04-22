@@ -1,20 +1,28 @@
-// Add Express
-// const express = require('express')
 import express from 'express';
+// import routes from './src/routes/userRoutes'
+// import bodyParser from 'body-parser'
+// require('dotenv').config()
 
-// Initialize Express
-const app = express()
+// console.log(process.env)
 
-// Create GET request
-app.get('/', (req, res) => {
-  res.send('This thing is Express on Vercel :-)')
-})
+const app = express();
 
-// Initialize server
-app.listen(3000, () => {
-  console.log('Running this thing on port 3000.')
-})
+const PORT = 3000; //process.env.PORT;
 
-// Once one have done "type": "module" in your package.json, one can start using ES syntax
-// module.exports = app;
+// app.use(bodyParser.urlencoded({ extended: true }));
+// app.use(bodyParser.json());
+
+// routes(app);
+
+// Serving static files
+// app.use(express.static('public'))
+
+app.get('/', (req, res) => 
+	res.send(`NodeJs, Express, Firebase on Vercel :-)`)
+);
+
+app.listen(PORT, () => 
+	console.log(`Server in running on port ${PORT}`)
+);
+
 export default app;

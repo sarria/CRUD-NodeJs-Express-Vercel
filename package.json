@@ -1,26 +1,25 @@
 {
-  "name": "crud-nodejs-express-vercel",
+  "name": "RentRedi Interview Code",
   "version": "1.0.0",
-  "type": "module",
-  "description": "Deploying NodeJS Express Serverless to Vercel",
+  "description": "CRUD Node Express Firebase",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sarria/CRUD-NodeJs-Express-Vercel.git"
+    "dev": "nodemon index",
+    "start": "nodemon ./index.js --exec ./node_modules/.bin/babel-node -e js"
   },
   "author": "Juan Sarria",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/sarria/CRUD-NodeJs-Express-Vercel/issues"
-  },
-  "homepage": "https://github.com/sarria/CRUD-NodeJs-Express-Vercel#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "axios": "^0.26.1",
+    "body-parser": "^1.20.0",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "firebase": "^9.6.11",
+    "nodemon": "^2.0.15"
   },
   "devDependencies": {
-    "nodemon": "^2.0.4"
-  }  
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-0": "^6.24.1"
+  }
 }
