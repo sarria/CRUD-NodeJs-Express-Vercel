@@ -1,7 +1,7 @@
 import express from 'express';
 // import routes from './src/routes/userRoutes'
-// import bodyParser from 'body-parser'
-// require('dotenv').config()
+import bodyParser from 'body-parser'
+require('dotenv').config()
 
 // console.log(process.env)
 
@@ -9,13 +9,13 @@ const app = express();
 
 const PORT = 3000; //process.env.PORT;
 
-// app.use(bodyParser.urlencoded({ extended: true }));
-// app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 
 // routes(app);
 
 // Serving static files
-// app.use(express.static('public'))
+app.use(express.static('public'))
 
 app.get('/', (req, res) => 
 	res.send(`NodeJs, Express, Firebase on Vercel :-)`)
