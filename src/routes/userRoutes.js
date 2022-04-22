@@ -1,10 +1,9 @@
 import {
 	getUsers,
-	addUser /*,
+	addUser,
 	getUserById,
 	updateUser,
 	deleteUser
-	*/
 } from '../controllers/userController'
 
 const routes = (app) => {
@@ -14,12 +13,11 @@ const routes = (app) => {
 
 	app.route('/user')
 		.post(addUser);
-	/*
+
 	app.route('/user/:id')
 		.get(getUserById)
 		.put(updateUser)
 		.delete(deleteUser);
-	*/
 }
 
 export default routes;
