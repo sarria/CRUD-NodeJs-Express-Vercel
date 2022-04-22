@@ -1,5 +1,5 @@
 import express from 'express';
-// import routes from './src/routes/userRoutes'
+import routes from './src/routes/userRoutes'
 import bodyParser from 'body-parser'
 require('dotenv').config()
 
@@ -12,7 +12,7 @@ const PORT = process.env.PORT;
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-// routes(app);
+routes(app);
 
 // Serving static files
 app.use(express.static('public'))
