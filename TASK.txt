@@ -28,7 +28,7 @@ app.get("/", (req, res) => {
     `https://api.openweathermap.org/data/2.5/weather?zip=12345&appid=${API_Key}`
   );
   // define company name
-  let companyName = "RentRedi";
+  let companyName = "Company";
   console.log("companyName = ", companyName);
 
   // send response

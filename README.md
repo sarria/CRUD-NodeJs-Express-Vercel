@@ -1,6 +1,6 @@
 # CRUD-Node-Express-Firebase
 https://github.com/sarria/CRUD-Node-Express-Firebase.git
-## Code interview for RentRedi
+## Code interview for Company
 Including .env for easy testing
 
 ## Task
